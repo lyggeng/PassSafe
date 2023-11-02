@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pwd_config"
+        android:title="    密码生成器配置"/>
+    <item
+        android:id="@+id/config"
+        android:title="    设置"/>
+    <item
+        android:id="@+id/sign_out"
+        android:title="    退出登录"/>
+
+</menu>
