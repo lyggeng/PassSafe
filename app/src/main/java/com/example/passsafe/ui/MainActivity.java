@@ -3,8 +3,6 @@ package com.example.passsafe.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -74,26 +72,6 @@ public class MainActivity extends BaseActivity {
         //初始化动作
         initActions();
         NavActions();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.top_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int itemId = item.getItemId();
-
-        if(itemId == R.id.menu_settings){
-            Intent intent = new Intent(MainActivity.this, PwdGeneratorActivity.class);
-            startActivity(intent);
-            return true;
-        }
-        else {
-            return super.onOptionsItemSelected(item);
-        }
     }
 
     @Override
